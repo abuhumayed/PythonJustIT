@@ -1,0 +1,6 @@
+print(2*10)
+print("Abu Junayed")
+print("276 Durnsford road")
+print("Football, gaming, gym ")
+print(5*4)
+print("answer to 2 times 3 is: ", 2*3)
