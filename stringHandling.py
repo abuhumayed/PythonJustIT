@@ -21,6 +21,14 @@ print(joinWords)
 "Exercise"
 # Create two variables fName and lName and join and print them using a variable called fullName
 
+fname = "Abu"
+lname = "Junayed"
+
+fullname = fname + " " + lname 
+
+print(fullname)
+
+
 "You can also use string-handling techniques to find out things about a string.  "
 """
 len() is used to count the number of characters in a string.
@@ -40,13 +48,20 @@ print(findFirstLetter)
 "Exercise"
 # Return all the characters from the string held in the course variable using negative values
 
+findLetter = course[-1]
+
+print(findLetter)
 # [-6:] [0:]
 
 # How can you access the letter h?
 
 "Exercise:"
 #  use any comparison operator to compare the letter "a" and "A"
+
+print("a" > "A")
 #  use any comparison operator to compare the letters "ax" and "ZZ"
+print("ax" > "ZZ")
+
 #  use any comparison operator to compare your firstname with any another first name
 # != , == , <= , >=, <,>
 
