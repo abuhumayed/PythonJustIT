@@ -1,0 +1,4 @@
+WARNING:root:On Wed Sep 27 16:44:10 2023
+User attempted to divide by zero
+INFO:root:On Wed Sep 27 16:44:27 2023
+Divided 4 / 2 = 2.0

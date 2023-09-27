@@ -15,20 +15,60 @@ Attributes are sometimes referred to as fields.
 
 "To Do: Predict, then Run, and then Investigate"
 # create a dictionary 
+# dict1 = {"key":"value", "key":"value", "key":"value"......}
+dict1 = {"fName": "James Smith", "age":23, "interests": "coding", "gamer":True, "fName": "Abdul Malik", 2:"Test"}
+print("Start of print")
+# print entire dictionary 
+print(dict1)
+
+# print specific value(s) from the dictionary 
+print(dict1["fName"])  # use  key to print a value
+print(dict1["age"]) # use  key to print a value
+
+print("End of print\n")
 
 
 "Using dictionary methods"
-
+print("\nUsing dictionary methods")
 # D.items() -> a set-like object providing a view on D's items
+dItems = dict1.items()
+print(dItems)
+"or"
+print(dict1.items())
+
 
 # D.keys() -> a set-like object providing a view on D's keys
+dKeys = dict1.keys()
+print(dKeys)
 
 # D.values() -> an object providing a view on D's values
+dVals = dict1.values()
+print(dVals)
 
-
+print("\nEnd of  dictionary methods")
 "To Do: Task 1: Refer to the example code above to create your own dictionary with key value pairs and explain the differences between the items(), keys() and values() dictionary methods"
 
+print("\nStart of  dictionary loop")
 # Loop through the keys ansd/values
+
+print("\nKeys")
+for aKey in dKeys:
+    print(aKey)
+"""
+for somekey in dict1.values():
+    print(somekey)
+"""
+
+print("\nValues")
+for aVal in dVals:
+    print(aVal)
+
+
+print("\nKeys and Values")
+for aKey, aVal in dItems:
+    print(f"Key: {aKey} | Value: {aVal}")
+
+print("\nEnd of dictionary loop")
 
 
 "To Do: Task 2: Modify"
@@ -43,17 +83,25 @@ print(f"Dictionary 2 {dict2}")
 
 
 # Use of the Update method to merge two dictionaries
-?.update(dict2)
+dict1.update(dict2)
 print(f"Updated dictionary 1\n{dict1}")
 
 "To Do: Task 2: Research: Look up Pop vs popItem explaind comment the code below to explain the difference"
 
-# Add comment here to explain the function of th pop() method.
-dict2.pop(3)
+
+print("Below is pop method")
 print(dict2)
 
+# Add comment here to explain the function of th pop() method.
+# pop(3) removes the the specified 3rd key and value pair.
+dict2.pop(3)  
+print(dict2)
+
+print(dict1)
 # Add comment here to explain the function of th popItem() method.
-?.popitem()
+
+# pop item removes the last key value pair in the dictionary records
+dict1.popitem()
 print(dict1)
 
 
@@ -61,11 +109,20 @@ print(dict1)
 # We can delete a key-value pair from a dictionary using the del keyword followed
 # by the key value to be deleted enclosed in [].
 
+print("this is del function")
+print(dict1)
+
 del dict1[2]
 
+print(dict1)
+
+del dict1["interests"]
+
+print(dict1)
 
 # update dictionary value using the key
-dict1[1] = "Emma Smith"
+dict1["fName"] = "Abdul Aziz"
+
 user={"interests" :"coding"}
 
 print(user)
