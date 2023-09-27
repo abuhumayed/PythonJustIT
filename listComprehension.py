@@ -1,36 +1,36 @@
-# https://docs.python.org/3/tutorial/datastructures.html
-# https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
-# https://docs.python.org/3/library/functions.html#zip
+# # https://docs.python.org/3/tutorial/datastructures.html
+# # https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
+# # https://docs.python.org/3/library/functions.html#zip
 
-"""
-List comprehensions provide a concise way to create lists. 
-Common applications are to make new lists where each element is 
-the result of some operations applied to each member of another 
-sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
-For example, assume we want to create a list of squares, like:
-"""
-print("squareNums1\n")
-squareNums = []
-for nums in range(5):
-    squareNums.append(nums * 2)
-    print(squareNums)
-print("squareNums1")
-print(squareNums)
-print("\n")
+# """
+# List comprehensions provide a concise way to create lists. 
+# Common applications are to make new lists where each element is 
+# the result of some operations applied to each member of another 
+# sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
+# For example, assume we want to create a list of squares, like:
+# """
+# print("squareNums1\n")
+# squareNums = []
+# for nums in range(5):
+#     squareNums.append(nums * 2)
+#     print(squareNums)
+# print("squareNums1")
+# print(squareNums)
+# print("\n")
 
-squareNums2 = [nums ** 2 for nums in range(6)]
-print("squareNums2")
-print(squareNums2)
-print("\n")
+# squareNums2 = [nums ** 2 for nums in range(6)]
+# print("squareNums2")
+# print(squareNums2)
+# print("\n")
 
-"""
-A list comprehension consists of brackets containing an expression followed by
-a for clause, then zero or more for or if clauses. The result will be a new list
-resulting from evaluating the expression in the context of the for and if clauses 
-which follow it. For example, this listcomp combines the elements of two lists if they are not equal:
+# """
+# A list comprehension consists of brackets containing an expression followed by
+# a for clause, then zero or more for or if clauses. The result will be a new list
+# resulting from evaluating the expression in the context of the for and if clauses 
+# which follow it. For example, this listcomp combines the elements of two lists if they are not equal:
 
-"""
-# index =  0 1 2 3 4 .........
+# """
+# # index =  0 1 2 3 4 .........
 aList = [1, 2, 3, 4, 5]
 bList = [6, 7, 8, 9, 10]
 print(aList)
